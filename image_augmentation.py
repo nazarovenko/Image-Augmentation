@@ -18,19 +18,12 @@ def flipVertical(image):
 
 
 def grayScale(image):
-    method = 0
-    if method == 0:
-        # converts BGR to grayscale image
-        out = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        # grayscale to BGR to retain 3 channels
-        out = cv2.cvtColor(out, cv2.COLOR_GRAY2BGR)
-        print('image shape is:', out.shape)
-    else:
-        # reduces saturation to 0 to emulate grayscale
-        out = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
-        out[:, :, 1] = 0  # Changes the S value
-        out = cv2.cvtColor(out, cv2.COLOR_HSV2BGR)
-        print('image shape is:', out.shape)
+    
+    # converts BGR to grayscale image
+    out = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    # grayscale to BGR to retain 3 channels
+    out = cv2.cvtColor(out, cv2.COLOR_GRAY2BGR)
+    print('image shape is:', out.shape)
 
     return out
 
@@ -128,8 +121,8 @@ def loopProduct(productName, im_dir):
             print(filename, 'opened', '\n')
 
             # perform loop desired number of times
-            loopGray(im, im_dir, im_name, 2)
-            #loopColoured(im, im_dir, im_name, 5)
+            loopGray(im, im_dir, im_name, 5)
+            loopColoured(im, im_dir, im_name, 5)
             print('----------------------------------------')
 
         else:
@@ -144,7 +137,5 @@ def loopAll(root_dir):
         print('---------------------------------------------------------------------')
 
     print('Done All')
-
-
 
 

@@ -8,7 +8,7 @@ def flipVertical(image):
     # randomly vertically flip per iteration
     flip = random.randint(0, 1)
 
-    if flip == 0:  # 1/2 change of flipping
+    if flip == 0:  # 1/2 chancee of flipping
         # 0 is the parameter for vertical flip
         out = cv2.flip(image, flip)
     else:

@@ -9,7 +9,7 @@ Performs the following image augmentations:
 5. varying contrast
 
 
-## Required Directory Organisaiton:
+## Default Directory Organisaiton:
 - Training Data
     - Class 1
         - Augmented Images
@@ -21,6 +21,8 @@ Performs the following image augmentations:
         - originalImage1.jpg
         - originalImage2.jpg
     - ...
+
+This can be adjusted according to the use case and existing system used from image_augmentation.py
 
 
 ## Required dependencies:

@@ -9,7 +9,7 @@ Performs the following image augmentations:
 5. varying contrast
 
 
-## Default Directory Organisaiton:
+## Default Directory Organisaton:
 - Training Data
     - Class 1
         - Augmented Images

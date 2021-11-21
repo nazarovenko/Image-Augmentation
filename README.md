@@ -28,3 +28,5 @@ This can be adjusted according to the use case and existing system used from ima
 ## Required dependencies:
 1. pip install numpy
 2. pip install opencv-python
+
+## This is a change made from Github
